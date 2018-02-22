@@ -68,7 +68,11 @@ h6, h7 {
 #uPick {
     z-index: 5;
     margin-left: -33%;
-    height: 160px;
+
+    background: white;
+    text-align: center;
+    width: 11%;  
+    border: aqua solid 2px;
 }
 
 .wordsWordsWords {
@@ -83,8 +87,32 @@ h6, h7 {
     text-shadow: 2px 2px 8px black;
 }
 
-#notuPick {
-    margin-left: -33%;
+
+#notuPick1 {
+    float: left;
+    margin-left: -9%;
+    background: white;
+    text-align: center;
+    width: 11%;  
+    border: aqua solid 2px;
+}
+
+#notuPick2 {
+    float: left;
+  /*  margin-left: -9%; */
+    background: white;
+    text-align: center;
+    width: 11%;  
+    border: aqua solid 2px;
+}
+
+#notuPick3 {
+    float: left;
+    margin-left: 10%;
+    background: white;
+    text-align: center;
+    width: 11%;  
+    border: aqua solid 2px;
 }
 
 #whoUfight {
@@ -94,7 +122,6 @@ h6, h7 {
 button {
     margin-bottom: 5px;
 }
-
 
 
 
