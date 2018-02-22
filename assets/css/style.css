@@ -6,6 +6,93 @@ body {
     background-image: url("../images/bg.png");
 }
 
+#gameName {
+    float: right;
+    margin-right: 13%;
+    color: aqua;
+    text-shadow: 2px 2px 8px black;
+}
+
+.r1c1 {
+    margin-left: -9%;
+    background: white;
+    text-align: center;
+    width: 11%;  
+    border: aqua solid 2px;
+}
+
+.row {
+    clear: both;
+}
+
+.r1c2 {
+    background: white;
+    width: 11%;
+    text-align: center;
+    border: aqua solid 2px;
+}
+
+.r1c3 {
+    background: white;
+    width: 15%;
+    text-align: center;
+    border: aqua solid 2px;
+}
+
+.r1c4 {
+    background: white;
+    width: 11%;
+    text-align: center;
+    clear: both;
+    border: aqua solid 2px;
+}
+
+#yoChar {
+    clear: both;
+    margin-left: -33%;
+    color: aqua;
+    text-shadow: 2px 2px 8px black;   
+}
+
+#theBad {
+    margin-left: -5.25%;
+    color: aqua;
+    text-shadow: 2px 2px 8px black;   
+}
+
+h6, h7 {
+    color: rgb(117, 115, 115);
+    text-shadow: 2px 2px 26px rgb(208, 80, 240);
+}
+
+#uPick {
+    z-index: 5;
+    margin-left: -33%;
+    height: 160px;
+}
+
+.wordsWordsWords {
+    margin-left: -25%;
+    color: aqua;
+    text-shadow: 2px 2px 8px black;
+}
+
+#theUgly {
+    margin-left: -11%;
+    color: aqua;
+    text-shadow: 2px 2px 8px black;
+}
+
+#notuPick {
+    margin-left: -33%;
+}
+
+#whoUfight {
+    margin-left: -25%;
+}
+
+
+
 
 
 
