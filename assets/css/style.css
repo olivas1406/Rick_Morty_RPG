@@ -65,16 +65,6 @@ h6, h7 {
     text-shadow: 2px 2px 26px rgb(208, 80, 240);
 }
 
-#uPick {
-    z-index: 5;
-    margin-left: -33%;
-
-    background: white;
-    text-align: center;
-    width: 11%;  
-    border: aqua solid 2px;
-}
-
 .wordsWordsWords {
     margin-left: -36%;
     color: aqua;
@@ -87,34 +77,7 @@ h6, h7 {
     text-shadow: 2px 2px 8px black;
 }
 
-
-#notuPick1 {
-    float: left;
-    margin-left: -9%;
-    background: white;
-    text-align: center;
-    width: 11%;  
-    border: aqua solid 2px;
-}
-
-#notuPick2 {
-    float: left;
-  /*  margin-left: -9%; */
-    background: white;
-    text-align: center;
-    width: 11%;  
-    border: aqua solid 2px;
-}
-
-#notuPick3 {
-    float: left;
-    margin-left: 10%;
-    background: white;
-    text-align: center;
-    width: 11%;  
-    border: aqua solid 2px;
-}
-
+*/
 #whoUfight {
     margin-left: -25%;
 }
@@ -122,9 +85,6 @@ h6, h7 {
 button {
     margin-bottom: 5px;
 }
-
-
-
 
 
 
