@@ -3,88 +3,53 @@
 }
 
 body {
-    background-image: url("../images/bg.png");
+    background-image: url("./assets/images/bg.png");
 }
 
-#gameName {
+#gameName {  
     float: right;
-    margin-right: 13%;
-    color: aqua;
-    text-shadow: 2px 2px 8px black;
+    margin-right: 17%;
 }
 
-.r1c1 {
-    margin-left: -9%;
-    background: white;
-    text-align: center;
-    width: 11%;  
-    border: aqua solid 2px;
-}
-
-.row {
-    clear: both;
-}
-
-.r1c2 {
-    background: white;
-    width: 11%;
+.r1c1, .r1c2, .r1c4 {
+    max-width: 9%;
     text-align: center;
     border: aqua solid 2px;
+    background: white;
 }
 
 .r1c3 {
-    background: white;
-    width: 15%;
+    max-width: 11%;
     text-align: center;
     border: aqua solid 2px;
-}
-
-.r1c4 {
     background: white;
-    width: 11%;
+}
+
+.r1c1 {
+    margin-left: 2%;
+}
+
+.r2c1 {
+    
+    margin-left: 2%;
+    max-width: 10%;
     text-align: center;
-    clear: both;
-    border: aqua solid 2px;
+    background: purple;
 }
 
-#yoChar {
-    clear: both;
-    margin-left: -33%;
-    color: aqua;
-    text-shadow: 2px 2px 8px black;   
+.r3c1, .r3c2, .r3c3 {
+    margin-left: 2%;
+    max-width: 10%;
+    text-align: center;
+    background: gray;
 }
 
-#theBad {
-    margin-left: -5.25%;
-    color: aqua;
-    text-shadow: 2px 2px 8px black;   
-}
 
-h6, h7 {
-    color: rgb(117, 115, 115);
-    text-shadow: 2px 2px 26px rgb(208, 80, 240);
-}
 
-.wordsWordsWords {
-    margin-left: -36%;
-    color: aqua;
-    text-shadow: 2px 2px 8px black;
-}
 
-#theUgly {
-    margin-left: -11%;
-    color: aqua;
-    text-shadow: 2px 2px 8px black;
-}
 
-*/
-#whoUfight {
-    margin-left: -25%;
-}
 
-button {
-    margin-bottom: 5px;
-}
+
 
 
 

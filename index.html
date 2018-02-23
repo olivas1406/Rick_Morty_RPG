@@ -7,87 +7,90 @@
     <title>RPG Game</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="./RPG.css"> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head> 
 <h1 id="gameName">Rick and Morty RPG</h1> 
-<body>
-        <div class="container">
-        <div class="row">
-            <div class="r1c1">
+<body>  
+    
+    
+    
+    <!--
+    <div class="container">  -->
+
+
+
+        <div class="row" style="clear:both">
+            <div class="col-2 r1c1">
                 <div class="char1">
                     <h6>Rick Sanchez</h6>
                     <img src="./assets/images/rick.png" class="charImg1" alt="Rick Sanchez"><br>
                     <h7 id="HP1">HP: </h7>
                 </div>
             </div>
-            <div class="r1c2">
+            <div class="col-2 r1c2">
                 <div class="char2">
                     <h6>Morty Smith</h6>
                     <img class="charImg2" src="./assets/images/morty.jpg" alt="Morty Smith"><br>
                     <h7 id="HP2">HP: </h7>        
                 </div>  
             </div>
-            <div class="r1c3">   
+            <div class="col-2 r1c3">   
                 <div class="char3">
                     <h6>Fart</h6>
                     <img class="charImg3" src="./assets/images/fart.jpg" alt="Fart Cloud"><br>
                     <h7 id="HP3">HP: </h7>           
                 </div>  
             </div>
-            <div class="r1c4"> 
+            <div class="col-2 r1c4"> 
                 <div class="char4">
                     <h6>Lucius</h6>
                     <img class="charImg4" src="./assets/images/lucius.png" alt="Lucius"><br>
                     <h7 id="HP4">HP: </h7>
                 </div>
-             </div>      
-        </div>   
-        <div class="row">
-            <div class="r2c1">
-                    <h5 id="yoChar">Your Character</h5>
-                    <div id="uPick">  
-                    <h7 id="HP5"></h7>
-                    </div>
-                </div>
-                </div>
-        <div class="row">
-                <div class="col-12 r3c1">
-                    <div id="theBad">
-                    <h5>Enemies Available To Attack</h5>
-                    <div id="notuPick1">  
-                    <h7 id="HP6"></h7>  
-                    </div>  
-                    <div id="notuPick2"> 
-                    <h7 id="HP7"></h7>   
-                    </div> 
-                    <div id="notuPick3">    
-                    <h7 id="HP8"></h7>
-                    </div> 
-                </div>               
-            </div>
-            <div class="row">
-                <div class="col-12 r4c1">
-                    <div class="wordsWordsWords">
-                       <h5>Fight Section</h5><br>
-                       <button type="button" class="btn btn-info">ATTACK!!!</button>
-                    </div>  
-                </div>
+            </div>      
+        </div> 
+
+
+    
+    <div class="row">
+        <div class="col-2 r2c1">
+            <div class="char5">
+                <h6 id="h621"></h6>
+                <h7 id="HP1"></h7>
             </div>
         </div>
-            <div class="row">
-                <div class="col-6 r5c1">
-                    <div id="theUgly">
-                        <h5>Defender</h5>
-                        <div id="whoUfight">
-                        </div>
-                    </div>
-                </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-2 r3c1">
+            <div class="char6">
+                <h6 id="h631"></h6>
+                <h7 id="HP1"></h7>
             </div>
-        </div> 
-    <script src="./testingRPG.js"></script>
-    
-    
-    
-    </body>
-    </html> 
+        </div>
+        <div class="col-2 r3c2">
+            <div class="char7">
+                <h6 id="h632"></h6>
+                <h7 id="HP2"></h7>        
+            </div>  
+        </div>
+        <div class="col-2 r3c3">   
+            <div class="char8">
+                <h6 id="h633"></h6>
+                <h7 id="HP3"></h7>           
+            </div>  
+        </div>
+
+
+
+
+
+
+
+<script src="./RPG.js"></script>
+
+</body>
+</html> 
+
