@@ -34,16 +34,19 @@ body {
     margin-left: 2%;
     max-width: 10%;
     text-align: center;
-    background: purple;
+   
 }
 
 .r3c1, .r3c2, .r3c3 {
-    margin-left: 2%;
-    max-width: 10%;
+    
+    max-width: 9.5%;
     text-align: center;
-    background: gray;
+
 }
 
+.r3c1 {
+    margin-left: 2%;
+}
 
 
 

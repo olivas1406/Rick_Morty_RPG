@@ -52,6 +52,14 @@ $("#NodesToMove").detach().appendTo('#DestinationContainerNode')
         $(".r1c1").css({
             "height" : "160px",
         });  
+        $(".r1c1, .r1c2, .r1c3, .r1c4").css({
+            "border" : "none",
+            "background" : "none",
+        })
+        $(".r2c1, .r3c1, .r3c2, .r3c3").css({
+            "border" : "aqua solid 2px",
+            "background" : "white",
+        })
     })
 
     $(".charImg2").on("click", function() {  
@@ -62,6 +70,14 @@ $("#NodesToMove").detach().appendTo('#DestinationContainerNode')
         $(".r1c1").css({
             "height" : "160px",
         });  
+        $(".r1c1, .r1c2, .r1c3, .r1c4").css({
+            "border" : "none",
+            "background" : "none",
+        })
+        $(".r2c1, .r3c1, .r3c2, .r3c3").css({
+            "border" : "aqua solid 2px",
+            "background" : "white",
+        })
     })
 
     $(".charImg3").on("click", function() {  
@@ -72,6 +88,14 @@ $("#NodesToMove").detach().appendTo('#DestinationContainerNode')
         $(".r1c1").css({
             "height" : "160px",
         });  
+        $(".r1c1, .r1c2, .r1c3, .r1c4").css({
+            "border" : "none",
+            "background" : "none",
+        })
+        $(".r2c1, .r3c1, .r3c2, .r3c3").css({
+            "border" : "aqua solid 2px",
+            "background" : "white",
+        })
     })
                 
     $(".charImg4").on("click", function() {  
@@ -82,6 +106,14 @@ $("#NodesToMove").detach().appendTo('#DestinationContainerNode')
         $(".r1c1").css({
             "height" : "160px",
         });  
+        $(".r1c1, .r1c2, .r1c3, .r1c4").css({
+            "border" : "none",
+            "background" : "none",
+        })
+        $(".r2c1, .r3c1, .r3c2, .r3c3").css({
+            "border" : "aqua solid 2px",
+            "background" : "white",
+        })
     })
     
            
@@ -91,7 +123,7 @@ $("#NodesToMove").detach().appendTo('#DestinationContainerNode')
 
 
 
-    
+
 /*
     $("#uPick").append("<img src='./assets/images/rick.png' />").css({
         "background" : "white",
