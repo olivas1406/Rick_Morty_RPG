@@ -7,6 +7,8 @@ body {
 }
 
 #gameName {  
+    position: fixed;
+    right: 0;
     float: right;
     margin-right: 17%;
     color: aqua;
@@ -31,12 +33,12 @@ h6, h7 {
 }
 
 .r1c1 {
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .r2c1 {
     
-    margin-left: 2%;
+    margin-left: 3%;
     max-width: 10%;
     text-align: center;
    
@@ -50,7 +52,7 @@ h6, h7 {
 }
 
 .r3c1 {
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 h4 {
@@ -61,6 +63,11 @@ button {
     margin-left: 2%;
 }
 
+.r4c1 {
+    text-align: center;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
 
 
 
