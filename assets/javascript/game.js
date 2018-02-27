@@ -1,5 +1,3 @@
-
-
 var rick = {                                                                        // Object with Rick's stats
 HP: 50,
 Attack: 120,
@@ -23,36 +21,8 @@ HP: 120,
 Attack: 60,
 CounterAttack: 80
 };
-/*
-var  yourDefend = {
-};
-*/
-var yourChar =  {
-HP: 0,
-Attack: 0,
-CounterAttack: 0,
-};                                                                 
 
-
-var yourDefend = {
-HP: 0,
-Attack: 0,
-CounterAttack: 0,
-};
-
-
-var logic1 = 0;
-/*
-var yourChar1 = {};
-
-var yourChar2 = {};
-
-var yourChar3 = {};
-
-var yourChar4 = {};
-*/
-
-
+var move1 = 0;
 
 $(document).ready(function(){
    
@@ -66,201 +36,92 @@ $(document).ready(function(){
 
     });
 
-    function cssChanges1() {                                                            // Function to handle CSS changes after the initial click
-        $(".r1c1").css("height", "160px");
-        $(".r1c1, .r1c2, .r1c3, .r1c4").css({
-            "border" : "none",
-            "background" : "none",
-        });
-        $(".r2c1, .r3c1, .r3c2, .r3c3").css({
-            "border" : "aqua solid 2px",
-            "background" : "white",
-        });
-    }
-
-    function moveRick() {                                                                       // Function to move Rick to 'Who You Be' (your character)
-        $(".char1").detach().appendTo(".char5").toggleClass("testing1").removeClass("char1");   // Move Rick to 'Your Character' position                                     
-        $(".char2").detach().appendTo(".char6").toggleClass("testing2").removeClass("char2");   // Move Morty to 'Enemies Available' position
-        $(".char3").detach().appendTo(".char7").toggleClass("testing3").removeClass("char3");   // Move Krombopulos to 'Enemies Available' position                                        
-        $(".char4").detach().appendTo(".char8").toggleClass("testing4").removeClass("char4");   // Move Lucius to 'Enemies Available' position                                        
-        cssChanges1();                                                                          // Call function for CSS changes
-        yourChar = rick;                                                                        // Assigns Rick's stats to var yourChar 
-    }
-
-    function moveMorty() {                                                                      // Function to move Morty to 'Who You Be' (your character)
-        $(".char2").detach().appendTo(".char5").toggleClass("testing1").removeClass("char2");   // Move Morty to 'Your Character' position
-        $(".char1").detach().appendTo(".char6").toggleClass("testing2").removeClass("char1");   // Move Rick to 'Enemies Available' position
-        $(".char3").detach().appendTo(".char7").toggleClass("testing3").removeClass("char3");   // Move Krombopuls to 'Enemies Available' position
-        $(".char4").detach().appendTo(".char8").toggleClass("testing4").removeClass("char4");   // Move Lucius to 'Enemies Available' position
-        cssChanges1();                                                                          // Call function for CSS changes
-        yourChar = morty;                                                                        // Assigns Morty's stats to var yourChar
-    }
-
-    function moveKrom() {                                                                       // Function to move Krombopulos to 'Who You Be' (your character)
-        $(".char3").detach().appendTo(".char5").toggleClass("testing1").removeClass("char3");   // Move Krombopulos to 'Your Character' position
-        $(".char1").detach().appendTo(".char6").toggleClass("testing2").removeClass("char1");   // Move Rick to 'Enemies Available' position
-        $(".char2").detach().appendTo(".char7").toggleClass("testing3").removeClass("char2");   // Move Morty to 'Enemies Available' position
-        $(".char4").detach().appendTo(".char8").toggleClass("testing4").removeClass("char4");   // Move Lucius to 'Enemies Available' position
-        cssChanges1();                                                                          // Call function for CSS changes
-        yourChar = krom;                                                                        // Assigns Krombopulos' stats to var yourChar
-    }
-
-    function moveLuc() {                                                                        // Function to move Lucius to 'Who You Be' (your character)
-        $(".char4").detach().appendTo(".char5").toggleClass("testing1").removeClass("char4");   // Move Lucius to 'Your Character' position
-        $(".char1").detach().appendTo(".char6").toggleClass("testing2").removeClass("char1");   // Move Rick to 'Enemies Available' position
-        $(".char2").detach().appendTo(".char7").toggleClass("testing3").removeClass("char2");   // Move Morty to 'Enemies Available' position
-        $(".char3").detach().appendTo(".char8").toggleClass("testing4").removeClass("char3");   // Move Krombopulos to 'Enemies Available' position
-        cssChanges1();                                                                          // Call function for CSS changes
-        yourChar = lucius;                                                                      // Assign Lucius' stats to var yourChar
-    }
-
-    $.fn.scrollView = function () {                                                         // scroll to div after click          
-        return this.each(function () {
-        $('html, body').animate({
-        scrollTop: $(this).offset().top 
-        }, 500);                                                                            // .5 seconds for transition   
-        });
-    }
-    
-    function movePos1D() {                                                                  // Function to move position 1 from 'Enemies Available' to 'Defender'
-        $(".r3c1").detach().appendTo(".r4c1");                                              // Move from div r3c1 to r4c1
-        $(".r3c2").css("margin-left", "3%");                                                // CSS changes
-        $(".r4c1").toggleClass("testClass1");                                               // Change div name
-        $(".r3c1").css({                                                                    // CSS changes
-            "border" : "none",
-            "background" : "none",
-        });
-        $(".testClass1").css({                                                              // CSS changes
-            "max-width" : "9.5%",
-            "max-height" : "15%",
-            "border" : "aqua solid 2px",
-            "background" : "white",
-            "margin-left" : "3%",
-            "display" : "inline",
-            "text-align" : "center",
-        });
-        $(".r2c1").scrollView();                                                            // Scroll to div r2c1
-        
-           }       /*
-        
-        if (logic1 === 234) {                                                               // rick was picked, morty is in position 1
-            yourDefend = morty;                                                             // assign morty stats to var yourDefend
-            logic1 = 678;                                                                   // krom will be in positon 1 next
-        } else if (logic1 === 134) {                                                        // morty was picked
-            yourDefend = morty;                                                             // asign rick stats to yourDefend (pos 1, round 1)
-            logic1 = 678;                                                                   // krom will be in position 1 next
-        } else if (logic1 === 124) {                                                        // krob was picked
-            yourDefend = rick;                                                              // assign rick stats to yourDefend (pos 1, round 1)
-            logic1 = 987;                                                                   // morty will be in position 1 next
-        } else if (logic1 === 123) {                                                        // Luc was picked
-            yourDefend = rick;                                                              // assigned rick stats to yourDefend (pos 1, round 1)
-            logic1 = 987;                                                                   // morty will be in position 1 next
-        } else if (logic1 === 678) {                                                        // Krom is now in position 1 (round 2)
-            yourDefend = krom;
-           
+    function rick1() {
+        if (move1 === 0) {                      // if first time rick is clicked
+        $(".r1c1").animate({top: "+=185px"}, .1);         // move rick to pos1
+        $(".r1c2, .r1c3, .r1c4").animate({top: "+=400px"}, .1); // move everyone else to pos2
+        $(".r1c2").animate({right: "+=135px"}, .1);
+        $(".r1c3").animate({right: "+=138px"}, .1);
+        $(".r1c4").animate({right: "+=140px"}, .1);
+        $(".chooseYou").remove();
+        move1 = 1234;                           // set move 1 to alert if rick is clicked again
             
-            ///////////////////////////need to reassign logic1 for round 3 set to 987
-        
-        } else if (logic1 === 987) {
-           yourDefend = morty; 
-         
-          
-          /////////////////////////////reassign logic 1 for round 3 set to 678
-        
+        } else if (move1 === 1234) {            // else if second time rick is clicked
+            alert("I'm Pickle Rick!!!");
+            move1 = 1111;
+        } else if ((move1 === 2134) || (move1 === 3124) || (move1 === 4123)) { // else if someone else is in pos1, move rick to pos3
+            $(".r1c1").animate({top: "+=200px"}, .1);   
+        } 
+    };
+
+    function morty1() {
+        if (move1 === 0) { 
+        $(".r1c2").animate({top: "+=185px"}, .1);          // move morty to pos1
+        $(".r1c1, .r1c3, .r1c4").animate({top: "+=400px"}, .1);
+        $(".r1c2").animate({right: "+=135px"}, .1);
+        $(".r1c3").animate({right: "+=138px"}, .1);
+        $(".r1c4").animate({right: "+=140px"}, .1);
+        $(".chooseYou").remove();
+        move1 = 2134;
+        } else if (move1 === 2134) {
+            alert("Nobody exists on purpose, nobody belongs anywhere, we are all going to die...");
+        } else if ((move1 === 1234) || (move1 === 3124) || (move1 === 4123)){
+            $(".r1c2").animate({top: "+=200px"}, .1);
+            
         }
-    } 
-    */
+    };
 
-    function movePos2D() {                                                                  // Function to move position 2 from 'Enemies Available' to 'Defender'
-        $(".r3c2").detach().appendTo(".r4c1");                                              // Move from div r3c2 to r4c1
-        $(".r3c2").css({                                                                    // CSS changes
-            "border" : "none",
-            "background" : "none",
-        });
-        $(".testClass1").css({                                                              // CSS changes
-            "max-width" : "9.5%",
-            "max-height" : "15%",
-            "border" : "aqua solid 2px",
-            "background" : "white",
-            "margin-left" : "3%",
-            "display" : "inline",
-            "text-align" : "center",
-        });
-        $(".r2c1").scrollView();                                                            // Scroll to div r2c1
-       
-    }
-       /*
-        if (logic1 === 234) {                                                               // rick was picked, krom is in pos 2
-            yourDefend = krom;                                                              // assign krom stats to var yourDefend
-            logic1 = 678;                                                                   // luc will be in positon 1 next
-        } else if (logic1 === 134) {                                                        // morty was picked, krom is in pos 2
-            yourDefend = krom;                                                              // assign krom stats to yourDefend (pos 1, round 1)
-            logic1 = 678;                                                                   // luc will be in position 1 next
-        } else if (logic1 === 124) {                                                        // krob was picked
-            yourDefend = morty;                                                             // assign morty stats to yourDefend (pos 1, round 1)
-            logic1 = 678;                                                                   // luc will be in position 2 next
-        } else if (logic1 === 123) {                                                        // Luc was picked
-            yourDefend = morty;                                                             // assigned morty stats to yourDefend (pos 1, round 1)
-            logic1 = 987;                                                                   // krom will be in position 1 next
-        } else if (logic1 === 678) {                                                        // luc is now in position 2 (round 2)
-            yourDefend = lucius;                                                            // assign luc stats to var yourDefend
-        } else if (logic1 === 987) {                                                        // krom is now in position 2 (round 2)
-           yourDefend = krom; 
-        }
-    }
+    function krom1() {
+        if (move1 === 0) {
+        $(".r1c3").animate({top: "+=185px"}, .1);           // move krom to pos1
+        $(".r1c1, .r1c2, .r1c4").animate({top: "+=400px"}, .1);
+        $(".r1c2").animate({right: "+=2px"}, .1);
+        $(".r1c3").animate({right: "+=270px"}, .1);
+        $(".r1c4").animate({right: "+=140px"}, .1);
+        $(".chooseYou").remove();
+        move1 = 3124;
+        } else if (move1 === 3124) {
+            alert("Here I go killing again");
+        } else if ((move1 === 1234) || (move1 === 2134) || (move1 === 4123))
+            $(".r1c3").animate({top: "+=200px"}, .1);
+    };
 
-*/
+    function luc1() {
+        if (move1 === 0) {
+        $(".r1c4").animate({top: "+=185px"}, .1);           // move luc to pos1
+        $(".r1c1, .r1c2, .r1c3").animate({top: "+=400px"}, .1);
+        $(".r1c4").animate({right: "+=405px"}, .1);
+        $(".chooseYou").remove();
+        move1 = 4123;
+        } else if (move1 === 4123) {
+            alert("I just want to go back to hell, where everyone thinks I'm smart and funny");
+        } else if ((move1 === 1234) || (move1 === 2134) || (move1 === 3124))
+        $(".r1c4").animate({top: "+=200px"}, .1);
+    };
 
 
 
-    function movePos3D() {                                                                  // Function to move position 3 from 'Enemies Available' to 'Defender'
-        $(".r3c3").detach().appendTo(".r4c1");                                              // Move from div r3c3 to r4c1
-        $(".r3c3").css({                                                                    // CSS changes
-                "border" : "none",
-                "background" : "none",
-            });
-            $(".testClass1").css({                                                          // CSS changes
-                "max-width" : "9.5%",
-                "max-height" : "15%",
-                "border" : "aqua solid 2px",
-                "background" : "white",
-                "margin-left" : "3%",
-                "display" : "inline",
-                "text-align" : "center",
-            });
-        $(".r2c1").scrollView();                                                            // Scroll to div r2c1
-       
-       
-       /*
-        if (logic1 === 123) {                                                               // luc was picked, krom is in position 3
-            yourDefend = krom;                                                              // assign krom stats to yourDefend 
-        } else {                                                                            // luc is in position 3 in all other cases
-            yourDefend = lucius;                                                            // assign luc stats to yourDefend 
-        }
-        */
-    }
-
-    $(".charImg1").on("click", function() {                                                 // If you click on Rick                              
-        moveRick();                                                                         // Run the moveRick function
-        var logic1 = 234;
+    $(".charImg1").on("click", function() {                                                  // click rick                          
+        rick1();                                                                            // call the rick1 function to move rick into position 1
+        move1 = 1234;                                                                        // set var move1 to 1234
     });
 
-    $(".charImg2").on("click", function() {                                                 // If you click on Morty                                        
-        moveMorty();                                                                        // Run the moveMorty function
-        var logic1 = 134
+    $(".charImg2").on("click", function() {                                                 // click Morty                                        
+        morty1();                                                                       // call the morty1 function to move morty into position 1
+        move1 = 2134;                                                                      // set var move1 to 2134
     });
 
-    $(".charImg3").on("click", function() {                                                 // If you click on krombopulos                                      
-        moveKrom();                                                                         // Run the moveKrom function
-        var logic1 = 124
+    $(".charImg3").on("click", function() {                                                 // click krombopulos                                      
+        krom1();                                                                         // Run the krom1 function to move krom into position 1
+        move1 = 3124;                                                                        // set var move1 to 3124
     });
               
-    $(".charImg4").on("click", function() {                                                 // If you click on Lucius                      
-        moveLuc();                                                                          // Run the moveLuc function
-        var logic1 = 123
+    $(".charImg4").on("click", function() {                                                 // click Lucius                      
+        luc1();                                                                          // Run the moveLuc function
+        move1 = 4123;                                                                       // set var move1 to 4123
     });
 
-
+/*
 
     $(".r3c1").on("click", function() {                                                     // If you click on position 1 (Enemies Available position)
         movePos1D();                                                                        // Move this character to the Defender position
@@ -275,6 +136,7 @@ $(document).ready(function(){
     });
 
 
+*/
 
 
 
