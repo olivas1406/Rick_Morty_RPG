@@ -96,6 +96,10 @@ button {
 p {
     margin-top: 2%;
     margin-left: 3%;
-    background: white;
-    width: 50%;
+    background: aqua;
+    color: black;
+    text-shadow: 2px 2px 8px white;
+    width: 43%;
 }
+
+
