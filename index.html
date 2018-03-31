@@ -4,57 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RPG Game</title>
+    <title>Rick &amp; Morty</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
 </head> 
-<P>What's going down: </P>
-<div class="resetB">
-</div>
-<h1 id="gameName">Rick and Morty RPG</h1> 
-<body>  
-    <div class="row" style="clear:both">
-        <div class="col-2 r1c1">
-            <div class="char1">  
-                <h6>Rick Sanchez</h6>
-                <img src="./assets/images/rick.png" class="charImg1" alt="Rick Sanchez"><br>
-                <h7 id="HP1">HP: </h7>
-            </div> 
-        </div>
-        <div class="col-2 r1c2">
-            <div class="char2">
-                <h6>Morty Smith</h6>
-                <img class="charImg2" src="./assets/images/morty.jpg" alt="Morty Smith"><br>
-                <h7 id="HP2">HP: </h7>        
-            </div>  
-        </div>
-        <div class="col-2 r1c3">   
-            <div class="char3">
-                <h6>Krombopulos</h6>
-                <img class="charImg3" src="./assets/images/krom.png" alt="Krombopulos Michael"><br>
-                <h7 id="HP3">HP: </h7>           
-            </div>  
-        </div>
-        <div class="col-2 r1c4"> 
-            <div class="char4">
-                <h6>Lucius</h6>
-                <img class="charImg4" src="./assets/images/lucius.png" alt="Lucius"><br>
-                <h7 id="HP4">HP: </h7>
+<body>
+    <div class="container-fluid">
+        <div class="row row1">
+            <div class="col-4 titleHere">
+                <p>Rick &amp; Morty RPG</p>
             </div>
-        </div>      
-    </div> 
-    <h4 class="chooseYou">Choose Your Character</h4>
-    </div>
-    <div class="attack">
-    </div>
-    <div class="pos2">
-    </div>
-    <div class="pos3">
-    </div>
-<script src="./assets/javascript/game.js"></script>
+        </div>
+        <div class="row">
+                <div class="col-3 reset">
+                    <div class="resetButton">
+                        Reset Game
+                    </div>
+                </div>
+            </div>
+        <div class="row"
+            <div class="col-8">
+                <p class="infoDiv">What's Going Down: </p>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="col-3 chooseFlasher">
+                <p class="flash flasher1">Choose Your Character &#x21E8;</p>
+            </div>
+            <div class="col-6 chooseYou">
+                <div class="row position1">
+                    <div class="col-2 pos1 pos11">
+                        <h6>Rick Sanchez</h6>
+                        <img src="./assets/images/rick.png" class="charImg1" alt="Rick Sanchez">
+                        <h7 class="hp HP1">HP: </h7>
+                    </div>
+                    <div class="col-2 pos1 pos12">
+                        <h6>Morty Smith</h6>
+                        <img class="charImg2" src="./assets/images/morty.jpg" alt="Morty Smith">
+                        <h7 class="hp HP2">HP: </h7>  
+                    </div>      
+                    <div class="col-2 pos1 pos13">
+                        <h6>Krombopulos</h6>
+                        <img class="charImg3" src="./assets/images/krom.png" alt="Krombopulos Michael">
+                        <h7 class="hp HP3">HP: </h7>  
+                    </div>         
+                    <div class="col-2 pos1 pos14">
+                        <h6>Lucius</h6>
+                        <img class="charImg4" src="./assets/images/lucius.png" alt="Lucius">
+                        <h7 class="hp HP4">HP: </h7>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 chooseFlasher">
+                    <p class="flash flasher1">&#x21E6; Choose Your Character</p>
+            </div>
+        </div>
+        <div class="row row3">
+            <div class="col-3 chooseD">
+                <p class="flash flasher2">Choose Your Defender &#x21E8;</p>
+            </div>
+            <div class="col-6 chooseDefend">
+                
+            </div>
+            <div class="col-3 chooseD">
+                <p class="flash flasher2">&#x21E6; Choose Your Defender</p>
+            </div>
+        </div>
+        <div class="row row4">
+            <div class="col-5 attack">
+                <div class="attackButton">
+                    ATTACK!!!
+                </div>
 
+            </div>
+            <div class="col-6 defender">                
+            </div>
+        </div>
+        
+    </div>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 </html> 
+
 

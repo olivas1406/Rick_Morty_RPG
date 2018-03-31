@@ -6,100 +6,115 @@ body {
     background-image: url("../images/bg.png");
 }
 
-#gameName {  
-    margin-top: -6.5%;
-    position: fixed; 
-    right: 0;
-    float: right;
-    margin-right: 17%;
+.titleHere {
     color: aqua;
-    text-shadow: 2px 2px 8px black;
-}
-
-.chooseYou {
-    margin: .5% 0 0 12%;
-}
-
-h4 {
-    color: aqua;
-    text-shadow: 2px 2px 8px black;
-}
-
-h6, h7 {
-    color: rgb(117, 115, 115);
-    text-shadow: 2px 2px 26px rgb(208, 80, 240);
-}
-
-.r1c1, .r1c2, .r1c3, .r1c4 {
-    max-width: 9%;
-    text-align: center;
-    border: aqua solid 2px;
-    background: white;
-}
-
-.r1c1 {
-    margin-left: 3%;
-}
-
-.r2c1 {
-    
-    margin-left: 3%;
-    max-width: 10%;
-    text-align: center;
-   
-}
-
-.r3c1, .r3c2, .r3c3 {
-    max-width: 9.5%;
-    text-align: center;
-}
-
-.r3c1 {
-    margin-left: 3%;
-}
-
-h4 {
-    margin-left: 2%;
-}
-
-button {
-    margin-left: 2%;
-}
-
-.r4c1 {
-    text-align: center;
-    margin-left: 4%;
-    margin-bottom: 4%;
-}
-
-.pos3 {
-    margin-top: 18%;
-}
-
-.btn {
-    margin-left: 13%;
-    margin-top: 6%;
-}
-
-.attack {
-    margin-left: 13%;
-    margin-top: -9%;
-}
-
-.reset {
-
-    margin-left: 3%;
-    margin-top: 1%;
-    margin-bottom: .5%;
-}
-
-p {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Chicle', cursive;
+    font-size: 60px;
     margin-top: 2%;
-    margin-left: 3%;
-    background: aqua;
-    color: black;
-    text-shadow: 2px 2px 8px white;
-    width: 43%;
+    text-align: center;
+    height: 150px;
+    margin: auto;
+    padding-top: 1.5%;
+    background-image: url("../images/headerBg.png");
+    border-radius: 12px;
 }
+
+.infoDiv {
+    margin: .5% auto .5% auto;
+    background: white;
+    font-size: 20px;
+    border: solid 1px darkblue;
+    border-radius: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 70%;
+}
+
+.flash {
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+    background-color: white;
+    border: solid 1px red;
+    animation: blink 1.3s step-end infinite alternate;
+    display: block;
+    border-radius: 50px;
+    margin: 19% auto 0 auto;
+}
+
+@keyframes blink { 
+    50% { border-color: yellow; } 
+}
+
+.chooseFlasher {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pos1 {
+    float: left;  
+    text-align: center;
+    background: white;
+    border: solid 1px aqua;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.position1 {
+    margin-bottom: 2%;
+}
+
+.pos2 {
+    float: left;  
+    text-align: center;
+    background: yellow;
+    border: solid 1px red;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 12.5%;
+    cursor: pointer;
+    
+    
+}
+
+.defender {
+    margin-left: -2.5%;
+    margin-top: 1%; 
+
+}
+
+.attackButton {
+    font-size: 22px;
+    background-color: red;
+    color: yellow;
+    border: solid 1px yellow;
+    border-radius: 20px;
+    text-align: center;
+    width: 30%;
+    margin: 13% 0 0 70%;
+    cursor: pointer;
+}
+
+.resetButton {
+    position: absolute;
+    text-align: center;
+    font-size: 22px;   
+    margin-top: -36%;
+    background-color: darkblue;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 44px;
+    cursor: pointer;
+}
+
+
 
 
