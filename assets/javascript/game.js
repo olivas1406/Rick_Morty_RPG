@@ -33,6 +33,14 @@
 
 $(document).ready(function(){  
 
+    function statPush() {
+    var pushYou = JSON.stringify(yourChar).slice(1, -1).replace(/\"/g, "");
+    var pushThey = JSON.stringify(yourDefend).slice(1, -1).replace(/\"/g, "");
+    $(".yourStats").html("Your Stats: <br>" + pushYou);
+    $(".defenderStats").html("Enemy Stats <br>" + pushThey);
+    };
+
+
     function hpPush() {
     $(".HP1").html("HP: " + (rick.HP));                                                 // Push Rick's HP to the HTML
     $(".HP2").html("HP: " + (morty.HP));                                                // Push Morty's HP to the HTML
@@ -88,6 +96,7 @@ $(document).ready(function(){
                 "color": "yellow",
                 "border-color": "white"
             });
+            statPush();
             }
             yourDefend = rick;                                                          // Set var yourDefend to  Rick's stats
             deleteMe = 1234                                                             // Set Rick as the character to delete if defeated
@@ -121,6 +130,7 @@ $(document).ready(function(){
                 "color": "yellow",
                 "border-color": "white"
             });
+            statPush();
         }
             yourDefend = morty;                                                         // Set var yourDefend to Morty's stats
             deleteMe = 2134                                                             // Set Morty as the character to delete if defeated
@@ -155,6 +165,7 @@ $(document).ready(function(){
                 "color": "yellow",
                 "border-color": "white"
             });
+            statPush();
         }
             yourDefend = krom;                                                          // Set var yourDefend to Krombopulos' stats
             deleteMe = 3124;                                                            // Set Krombopulos as the character to delete if defeated
@@ -189,6 +200,7 @@ $(document).ready(function(){
                 "color": "yellow",
                 "border-color": "white"
             });
+            statPush();
         }
         yourDefend = lucius;                                                            // Set var yourDefend to Lucius' stats
         deleteMe = 4123;                                                                // Set Lucius as the character to delete if defeated
@@ -196,6 +208,7 @@ $(document).ready(function(){
     };
     
     $(".attackButton").on("click", function() {                                         // Attack button click event handler
+        statPush();
         if ((tracker === true) || (deleteMe === 555)) {                                 // If var tracker is true or var deleteMe is 555
             $("infoDiv").html(" Choose an opponent first - are you attacking yourself?!?"); // No opponent has been chosen
         }

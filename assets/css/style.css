@@ -28,7 +28,21 @@ body {
     border-radius: 30px;
     padding-left: 2%;
     padding-right: 2%;
-    width: 70%;
+    width: 95%;
+}
+
+.yourStats{
+    text-align: center;
+    color: aqua;
+    font-size: 16px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.defenderStats {
+    text-align: center;
+    color: aqua;
+    font-size: 16px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .flash {
