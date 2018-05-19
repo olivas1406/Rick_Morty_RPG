@@ -11,7 +11,7 @@ who you want to play as, then select your Defender and ATTACK!!!.
 [CLICK ME to see it in action](https://olivas1406.github.io/Rick_Morty_RPG/)
 <br><br>
 ---
-![Rick & Morty RPG Screen Cap](./ffImage.png)
+![Rick & Morty RPG Screen Cap](./rick.png)
 
 This project was created and is maintained by Daniel Olivas
 
