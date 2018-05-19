@@ -7,8 +7,14 @@ Rick and Morty RPG Game
 This is a Rick and Morty Roll Playing Game that allows you to choose between Rick, Morty, Krombopulos, or Lucius.  First, choose
 who you want to play as, then select your Defender and ATTACK!!!.  
 
-This page was created and is maintained by Daniel Olivas, to get help:
+---
+[CLICK ME to see it in action](https://olivas1406.github.io/Rick_Morty_RPG/)
+<br><br>
+---
+![Rick & Morty RPG Screen Cap](./ffImage.png)
 
-president@computersoluciones.us
+This project was created and is maintained by Daniel Olivas
 
-https://www.linkedin.com/in/daniel-olivas/
+To get help:<br><br>
+me@danielolivas.net<br>
+http://danielolivas.net
