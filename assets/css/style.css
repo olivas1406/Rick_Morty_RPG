@@ -17,14 +17,16 @@ body {
     margin: auto;
     padding-top: 1.5%;
     background-image: url("../images/headerBg.png");
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     border-radius: 12px;
 }
 
 .infoDiv {
-    margin: .5% auto .5% auto;
+    margin: 1% auto 1% auto;
     background: white;
     font-size: 20px;
     border: solid 1px darkblue;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     border-radius: 30px;
     padding-left: 2%;
     padding-right: 2%;
@@ -56,7 +58,7 @@ body {
     width: 80%;
     font-size: 18px;
     background-color: white;
-    border: solid 1px red;
+    border: dashed 2px red;
     animation: blink 1.3s step-end infinite alternate;
     display: block;
     border-radius: 50px;
@@ -64,7 +66,7 @@ body {
 }
 
 @keyframes blink { 
-    50% { border-color: yellow; } 
+    50% { border-color: aqua; } 
 }
 
 .chooseFlasher {
@@ -111,6 +113,7 @@ body {
     background-color: red;
     color: yellow;
     border: solid 1px yellow;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     border-radius: 20px;
     text-align: center;
     width: 30%;
@@ -124,6 +127,7 @@ body {
     font-size: 22px;   
     margin-top: -36%;
     background-color: darkblue;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
     color: white;
     width: 150px;
     height: 40px;
